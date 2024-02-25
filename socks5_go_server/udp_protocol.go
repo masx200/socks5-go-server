@@ -1,4 +1,4 @@
-package main
+package socks5_go_server
 
 import (
 	"bytes"

@@ -3,6 +3,7 @@ package main
 import (
 	"flag"
 	"fmt"
+	"github.com/masx200/socks5-go-server/socks5_go_server"
 	"net"
 	"os"
 	"strconv"
@@ -35,7 +36,7 @@ func main() {
 		serverAddr = addr
 	}
 
-	server := NewServer()
+	server := socks5_go_server.NewServer()
 	server.EnableUDP()
 	server.OnStarted(func(listener *net.TCPListener) {
 		fmt.Println("start server on", listener.Addr().String())
