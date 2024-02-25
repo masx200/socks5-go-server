@@ -24,6 +24,12 @@ func init() {
 }
 
 func main() {
+	fmt.Println("port:")
+	fmt.Println(port)
+	fmt.Println("username:")
+	fmt.Println(username)
+	fmt.Println("password:")
+	fmt.Println(password)
 	if port <= 0 {
 		flag.Usage()
 		os.Exit(1)
